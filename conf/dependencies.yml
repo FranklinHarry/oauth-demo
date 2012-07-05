@@ -1,0 +1,15 @@
+# Application dependencies
+
+require:
+    - play
+    - play -> cloudbees 0.2.2
+    - org.codehaus.jackson ->jackson-core-asl 1.9.2
+    - org.codehaus.jackson ->jackson-mapper-asl 1.9.2
+    - commons-lang -> commons-lang 2.6
+
+repositories:
+    - guice:
+        type: iBiblio
+        root: "http://guice-maven.googlecode.com/svn/trunk"
+        contains:
+            - com.google.code.guice.*

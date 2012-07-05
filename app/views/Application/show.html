@@ -1,0 +1,14 @@
+#{extends 'main.html' /}
+#{set title:'User Info' /}
+
+<h3>User Info</h3>
+    <table>
+        %{
+            for(String field:userInfo.keySet()){
+         }%
+
+            <tr><td>${field}</td><td>${userInfo.get(field)}</td></tr>
+        %{
+            }
+        %}
+    </table>
