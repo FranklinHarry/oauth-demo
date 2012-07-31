@@ -29,7 +29,7 @@ public class Application extends Controller {
     public static void show(){
         String token = (String) Cache.get("token");
         if(session.get("uid") == null || token == null){
-            redirectToOauth(CLIENT_ID,"user");
+            redirectToOauth(CLIENT_ID, "https://api.cloudbees.com/v2/users/user");
             return;
         }
 
